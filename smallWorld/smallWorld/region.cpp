@@ -12,6 +12,23 @@ Region::Region(int id, int token, vector<Region> neigborRegions)
 	this->neigborRegions = neigborRegions;
 }
 
+Region::Region(int id, int x_pos, int y_pos, int token)
+{
+	this->id = id;
+	this->x_pos = x_pos;
+	this->y_pos = y_pos;
+	this->token = token;
+}
+
+Region::Region(int id, int x_pos, int y_pos, int token, vector<Region> neigborRegions)
+{
+	this->id = id;
+	this->x_pos = x_pos;
+	this->y_pos = y_pos;
+	this->token = token;
+	this->neigborRegions = neigborRegions;
+}
+
 void Region::setId(int token)
 {
 	this->id = id;

@@ -17,10 +17,18 @@ private:
 	// neigboring regions
 	vector<Region> neigborRegions;
 
+	//pixel values on the picture
+	int x_pos;
+	int y_pos;
+
 public:
 	Region();
 
 	Region(int id, int token, vector<Region> neigborRegions);
+
+	Region(int id, int x_pos, int y_pos, int token);
+
+	Region(int id, int x_pos, int y_pos, int token, vector<Region> neigborRegions);
 
 	void setId(int token);
 
