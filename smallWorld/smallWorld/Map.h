@@ -14,4 +14,11 @@ public:
 	Map(vector<Region> regions);
 
 	Region find(Region region);
+
+	vector<Region> getRegions();
+
+	vector<Region>* getRegionsPtr();
+
+	void printMapGraph();
+
 };
