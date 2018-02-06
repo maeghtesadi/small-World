@@ -25,4 +25,14 @@ public:
 	
 	void setMap();
 
+	void setMapGraph();
+
+	Map getMap();
+	
+	string getFile();
+
+	string getPictureLocation();
+
+	vector<vector<int>> getEdges();
+
 };

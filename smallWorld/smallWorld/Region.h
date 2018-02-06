@@ -15,7 +15,7 @@ private:
 	int token;
 
 	// neigboring regions
-	vector<Region> neigborRegions;
+	vector<Region*> neigborRegions; //veken said store pointers //claudia says all object instance variables should be pointers
 
 	//pixel values on the picture
 	int x_pos;
@@ -24,11 +24,11 @@ private:
 public:
 	Region();
 
-	Region(int id, int token, vector<Region> neigborRegions);
+	Region(int id, int token, vector<Region*> neigborRegions);
 
 	Region(int id, int x_pos, int y_pos, int token);
 
-	Region(int id, int x_pos, int y_pos, int token, vector<Region> neigborRegions);
+	Region(int id, int x_pos, int y_pos, int token, vector<Region*> neigborRegions);
 
 	void setId(int token);
 
@@ -38,12 +38,12 @@ public:
 
 	int getToken();
 
-	void setNeigborRegions(vector<Region> neigborRegions);
+	void setNeigborRegions(vector<Region*> neigborRegions);
 
-	void addNeigborRegions(Region region);
+	void addNeigborRegions(Region* region);
 
-	void removeNeigborRegions(Region region);
+	void removeNeigborRegions(Region* region);
 
-	vector<Region> getNeigborRegions();
+	vector<Region*> getNeigborRegions();
 
 };

@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "MapLoader.h"
 #include <iostream>
 #include <iterator>
@@ -92,22 +93,26 @@ void MapLoader::setMap(string file)
 
 			int count = 0;
 			vector<int> neighbors;
-			for (int i = 4; i < array.size; i++)
+			for (int i = 3; i < array.size(); i++)
 			{
 				stringstream ss3(array[i]);
 				int value;
 				ss3 >> value;
 				neighbors.push_back(value);
-				edges.push_back(neighbors);
+				
 			}
-
+			edges.push_back(neighbors);
 			
 		}
 
 	}
 
-	this->map(loadedMap);
-
+	//set our map member fuction with the values gotten from the file
+	for (int i = 0; i < loadedMap.size(); i++)
+	{
+		Region temp = loadedMap[i];
+		map.getRegionsPtr()->push_back(temp);
+	}
 }
 
 void MapLoader::setMap()
@@ -121,4 +126,24 @@ void MapLoader::setMap()
 		setMap(file);
 	}
 
+}
+
+Map MapLoader::getMap()
+{
+	return map;
+}
+
+string MapLoader::getFile()
+{
+	return file;
+}
+
+string MapLoader::getPictureLocation()
+{
+	return pictureLocation;
+}
+
+vector<vector<int>> MapLoader::getEdges()
+{
+	return edges;
 }
