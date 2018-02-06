@@ -1,0 +1,6 @@
+﻿  mapLoader.cpp
+c:\school projects\comp 345\small-world\smallworld\smallworld\maploader.cpp(98): warning C4018: '<': signed/unsigned mismatch
+c:\school projects\comp 345\small-world\smallworld\smallworld\maploader.cpp(113): warning C4018: '<': signed/unsigned mismatch
+c:\school projects\comp 345\small-world\smallworld\smallworld\maploader.cpp(122): warning C4018: '<': signed/unsigned mismatch
+c:\school projects\comp 345\small-world\smallworld\smallworld\maploader.cpp(126): warning C4018: '<': signed/unsigned mismatch
+  smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\Debug\smallWorld.exe
