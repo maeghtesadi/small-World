@@ -32,3 +32,10 @@ vector<Region>* Map::getRegionsPtr() {
 
 	return &regions;
 }
+
+void Map::printMapGraph() {
+	for (int i = 0; i < regions.size(); i++)
+	{
+		regions[i].printNeigbors();
+	}
+}

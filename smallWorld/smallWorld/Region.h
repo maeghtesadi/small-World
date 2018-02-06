@@ -46,4 +46,6 @@ public:
 
 	vector<Region*> getNeigborRegions();
 
+	void printNeigbors();
+
 };

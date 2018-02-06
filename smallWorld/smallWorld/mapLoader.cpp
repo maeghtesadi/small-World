@@ -11,10 +11,12 @@ MapLoader::MapLoader()
 
 }
 
-MapLoader::MapLoader(string file) 
+MapLoader::MapLoader(string file)
 {
 	this->file = file;
+	map = new Map(); // we use new because we want to modify Map at run time
 	setMap(this->file);
+	setMapGraph();
 }
 
 void MapLoader::setMap(string file)
@@ -87,9 +89,9 @@ void MapLoader::setMap(string file)
 			ss2 >> y_pos;
 
 			//make regions with the values obtained from the file
-			Region loadedRegion(id, x_pos, y_pos,5);
+			Region* loadedRegion = new Region(id, x_pos, y_pos,5);
 
-			loadedMap.push_back(loadedRegion);
+			loadedMap.push_back(*loadedRegion);
 
 			int count = 0;
 			vector<int> neighbors;
@@ -111,8 +113,27 @@ void MapLoader::setMap(string file)
 	for (int i = 0; i < loadedMap.size(); i++)
 	{
 		Region temp = loadedMap[i];
-		map.getRegionsPtr()->push_back(temp);
+		map->getRegionsPtr()->push_back(temp);
 	}
+}
+
+void MapLoader::setMapGraph() {
+	//for each regions, connect to other regions based on values from the file
+	for (int i = 0; i < map->getRegions().size(); i++)
+	{
+		vector<Region*> temp;
+
+		for (int j = 0; j < edges[i].size(); j++)
+		{
+			int temp2 = edges[i][j] - 1;
+			Region* tempRegion = &map->getRegions().at(temp2); // &map->getRegions().at(temp2) putting a '&' at the begining turns everything into a pointer
+			temp.push_back(tempRegion); //a neighbor region   // [edges[i][j] - 1] index of the neigbor region in map.getRegions()		
+		}
+		map->getRegionsPtr()->at(i).setNeigborRegions(temp);
+		//map->getRegionsPtr()->at(i)->setNeigborRegions(&temp);
+		//*(map.getRegionsPtr() + i)  ;
+	}
+
 }
 
 void MapLoader::setMap()
@@ -130,7 +151,7 @@ void MapLoader::setMap()
 
 Map MapLoader::getMap()
 {
-	return map;
+	return *map;
 }
 
 string MapLoader::getFile()

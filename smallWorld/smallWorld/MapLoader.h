@@ -8,7 +8,7 @@ using namespace std;
 class MapLoader
 {
 private:
-	Map map;
+	Map* map;
 	string file;
 	string pictureLocation;
 

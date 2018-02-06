@@ -19,4 +19,6 @@ public:
 
 	vector<Region>* getRegionsPtr();
 
+	void printMapGraph();
+
 };

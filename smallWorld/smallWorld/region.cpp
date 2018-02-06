@@ -1,6 +1,7 @@
 
 #include "stdafx.h"
 #include "Region.h"
+#include <iostream>
 
 Region::Region()
 {
@@ -76,6 +77,14 @@ void Region::removeNeigborRegions(Region* region)
 vector<Region*> Region::getNeigborRegions()
 {
 	return neigborRegions;
+}
+
+void Region::printNeigbors() {
+	std::cout << "my region id is " << this->id << " and my neigbor's ids are: " << endl;
+	for (int i = 0; i < neigborRegions.size(); i++)
+	{
+		std::cout << neigborRegions[i]->getId() << endl;
+	}
 }
 
 
