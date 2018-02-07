@@ -14,6 +14,9 @@ private:
 	//token value of the region 
 	int token;
 
+	//the player who controls this region
+	int owner_id;
+
 	// neigboring regions
 	vector<Region*> neigborRegions; //veken said store pointers //claudia says all object instance variables should be pointers
 
