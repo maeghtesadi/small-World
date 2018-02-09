@@ -13,7 +13,7 @@ public:
 	
 	DiceRollingFacility();
 
-	int throwDice();
+	int rollDice();
 
 };
 
