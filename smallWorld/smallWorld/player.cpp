@@ -3,7 +3,7 @@
 
 Player::Player()
 {
-
+	die = new DiceRollingFacility();
 }
 
 void Player::picks_race()

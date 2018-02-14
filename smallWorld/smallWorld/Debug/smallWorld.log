@@ -1,3 +1,1 @@
-﻿  DiceRollingFacility.cpp
-  LINK : C:\School projects\comp 345\small-World\smallWorld\Debug\smallWorld.exe not found or not built by the last incremental link; performing full link
-  smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\Debug\smallWorld.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'c:\school projects\comp 345\small-world\smallworld\smallworld\debug\vc141.idb' because it is being used by another process.

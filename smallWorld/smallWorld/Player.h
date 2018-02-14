@@ -1,6 +1,7 @@
 #pragma once
 #include "Coin.h"
 #include "Region.h"
+#include "DiceRollingFacility.h"
 #include <vector>
 #include <string>
 
@@ -21,7 +22,7 @@ private:
 
 	//game tokens
 
-	//dice rolling facility
+	DiceRollingFacility* die;
 
 public:
 
