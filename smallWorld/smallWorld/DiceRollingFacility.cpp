@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "DiceRollingFacility.h"
 #include <ctime>
 #include <iostream>

@@ -1,6 +1,8 @@
 #pragma once
+#include "Coin.h"
 #include "Region.h"
 #include <vector>
+#include <string>
 
 
 using namespace std;
@@ -12,6 +14,10 @@ private:
 	int id; 
 
 	vector<Region*>* regions;
+
+	vector<Coin*>* coins;
+
+	string summarySheet;
 
 	//game tokens
 
@@ -33,5 +39,15 @@ public:
 
 	vector<Region*>* getRegions();
 
+	void addCoin(Coin* coin);
 
+	void removeCoin(Coin* coin, int value_of_coin);
+
+	vector<Region*>* getCoins();
+
+	string getSummarySheet();
+
+	void setSummarySheet(string summary);
+
+	void appendSummarySheet(string summary);
 };
