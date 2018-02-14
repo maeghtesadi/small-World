@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "PowerBadge.h"
 
 using namespace std;
 
@@ -54,7 +55,7 @@ public:
 
 	void setPowerBadge();
 
-	virtual void applySpecialPower() = 0;
+	//virtual void applySpecialPower() = 0;
 
 };
 
@@ -64,7 +65,7 @@ class Amazons : public Race
 {
 
 public:
-	Amazons();
+	//Amazons();
 
 	void applySpecialPower();
 };
@@ -75,7 +76,7 @@ class Dwarves : public Race
 {
 
 public:
-	Dwarves();
+	//Dwarves();
 
 	void applySpecialPower();
 };
@@ -86,7 +87,7 @@ class Elves : public Race
 {
 
 public:
-	Elves();
+	//Elves();
 
 	void applySpecialPower();
 };
@@ -97,7 +98,7 @@ class Ghouls : public Race
 {
 
 public:
-	Ghouls();
+	//Ghouls();
 
 	void applySpecialPower();
 };
@@ -108,7 +109,7 @@ class Ratmen : public Race
 {
 
 public:
-	Ratmen();
+	//Ratmen();
 
 	void applySpecialPower();
 };
@@ -119,7 +120,7 @@ class Skeletons : public Race
 {
 
 public:
-	Skeletons();
+	//Skeletons();
 
 	void applySpecialPower();
 };
@@ -130,7 +131,7 @@ class Sorcerers : public Race
 {
 
 public:
-	Sorcerers();
+	//Sorcerers();
 
 	void applySpecialPower();
 };
@@ -141,7 +142,7 @@ class Tritons : public Race
 {
 
 public:
-	Tritons();
+	//Tritons();
 
 	void applySpecialPower();
 };
@@ -152,7 +153,7 @@ class Giants : public Race
 {
 
 public:
-	Giants();
+	//Giants();
 
 	void applySpecialPower();
 };
@@ -163,7 +164,7 @@ class Halflings : public Race
 {
 
 public:
-	Halflings();
+	//Halflings();
 
 	void applySpecialPower();
 };
@@ -174,7 +175,7 @@ class Humans : public Race
 {
 
 public:
-	Humans();
+	//Humans();
 
 	void applySpecialPower();
 };
@@ -185,7 +186,7 @@ class Orcs : public Race
 {
 
 public:
-	Orcs();
+	//Orcs();
 
 	void applySpecialPower();
 };
@@ -196,7 +197,7 @@ class Trolls : public Race
 {
 
 public:
-	Trolls();
+	//Trolls();
 
 	void applySpecialPower();
 };
@@ -207,7 +208,7 @@ class Wizards : public Race
 {
 
 public:
-	Wizards();
+	//Wizards();
 
 	void applySpecialPower();
 };
@@ -218,7 +219,7 @@ class  LostTribes : public Race
 {
 
 public:
-	LostTribes();
+	//LostTribes();
 
 	void applySpecialPower();
 };

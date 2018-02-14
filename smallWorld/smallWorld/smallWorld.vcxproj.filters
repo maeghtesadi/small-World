@@ -71,5 +71,8 @@
     <ClCompile Include="DiceRollingFacility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="race.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
