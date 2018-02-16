@@ -31,23 +31,23 @@ public:
 
 	int getValue();
 
-	int getNum_tokens();
+	//int getNum_tokens();
 
-	void setNum_tokens();
+	//void setNum_tokens();
 
 	bool getIsActive();
 	
-	void setIsActive();
+	void setIsActive(bool active);
 
 	bool getIsDecline();
 
-	void setIsDecline();
+	void setIsDecline(bool decline);
 
 	int getOwner_id();
 
-	void setOwnerId();
+	void setOwnerId(int id);
 	
-	int getMax_num_tokens();
+	//int getMax_num_tokens();
 
 	string getName();
 

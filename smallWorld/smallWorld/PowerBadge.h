@@ -19,7 +19,7 @@ public:
 
 	int getOwner_id();
 
-	void setOwnerId();
+	void setOwnerId(int id);
 
 	string getName();
 

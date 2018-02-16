@@ -1,6 +1,36 @@
 #include "stdafx.h"
 #include "Race.h"
 
+void Race::setIsActive(bool active) {
+	this->isActive = active;
+}
+bool Race::getIsActive() {
+	return this->isActive;
+}
+
+void Race::setIsDecline(bool decline) {
+	this->isDecline = decline;
+}
+bool Race::getIsDecline(){
+	return this->isDecline;
+}
+void Race::setOwnerId(int id ) {
+	this->owner_id= id;
+}
+int Race::getOwner_id() {
+	return this->owner_id;
+}
+
+int Race::getValue() {
+	return this->value;
+}
+string Race::getName() {
+	return this->name;
+}
+
+
+
+
 Amazons::Amazons()
 {
 	this->name="Amazons";

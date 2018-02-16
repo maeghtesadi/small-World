@@ -1,6 +1,22 @@
 #include "stdafx.h"
 #include "PowerBadge.h"
 
+int PowerBadge::getValue() {
+	return this->value;
+}
+
+int PowerBadge::getOwner_id() {
+	return this->owner_id;
+}
+
+void PowerBadge::setOwnerId(int id) {
+	this->owner_id = id;
+}
+
+string PowerBadge::getName() {
+	return this->name;
+}
+
 Alchemist::Alchemist()
 {
 	this->name = "Alchemist";
