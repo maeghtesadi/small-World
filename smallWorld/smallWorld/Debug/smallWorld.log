@@ -1,1 +1,6 @@
-﻿
+﻿  smallWorld.cpp
+c:\c++ school project\small-world\smallworld\smallworld\smallworld.cpp(155): warning C4018: '<': signed/unsigned mismatch
+c:\c++ school project\small-world\smallworld\smallworld\smallworld.cpp(160): warning C4018: '<': signed/unsigned mismatch
+c:\c++ school project\small-world\smallworld\smallworld\smallworld.cpp(165): warning C4018: '<': signed/unsigned mismatch
+c:\c++ school project\small-world\smallworld\smallworld\smallworld.cpp(170): warning C4018: '<': signed/unsigned mismatch
+  smallWorld.vcxproj -> C:\C++ School Project\small-World\smallWorld\Debug\smallWorld.exe

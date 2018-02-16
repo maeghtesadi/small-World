@@ -4,7 +4,7 @@
 using namespace std;
 
 class PowerBadge {
-private:
+protected:
 	
 	string name;
 
@@ -32,7 +32,7 @@ class Alchemist : public PowerBadge
 {
 
 public:
-	//Alchemist();
+	Alchemist();
 
 	void applySpecialPower();
 };
@@ -43,7 +43,7 @@ class Berserk : public PowerBadge
 {
 
 public:
-	//Berserk();
+	Berserk();
 
 	void applySpecialPower();
 };
@@ -54,7 +54,7 @@ class Bivouacking : public PowerBadge
 {
 
 public:
-	//Bivouacking();
+	Bivouacking();
 
 	void applySpecialPower();
 };
@@ -65,7 +65,7 @@ class Commando : public PowerBadge
 {
 
 public:
-	//Commando();
+	Commando();
 
 	void applySpecialPower();
 };
@@ -76,7 +76,7 @@ class Diplomat : public PowerBadge
 {
 
 public:
-	//Diplomat();
+	Diplomat();
 
 	void applySpecialPower();
 };
@@ -87,7 +87,7 @@ class DragonMaster : public PowerBadge
 {
 
 public:
-	//DragonMaster();
+	DragonMaster();
 
 	void applySpecialPower();
 };
@@ -98,7 +98,7 @@ class Flying : public PowerBadge
 {
 
 public:
-	//Flying();
+	Flying();
 
 	void applySpecialPower();
 };
@@ -109,7 +109,7 @@ class Forest : public PowerBadge
 {
 
 public:
-	//Forest();
+	Forest();
 
 	void applySpecialPower();
 };
@@ -120,7 +120,7 @@ class Fortified : public PowerBadge
 {
 
 public:
-	//Fortified();
+	Fortified();
 
 	void applySpecialPower();
 };
@@ -131,7 +131,7 @@ class Heroic : public PowerBadge
 {
 
 public:
-	//Heroic();
+	Heroic();
 
 	void applySpecialPower();
 };
@@ -142,7 +142,7 @@ class Hill : public PowerBadge
 {
 
 public:
-	//Hill();
+	Hill();
 
 	void applySpecialPower();
 };
@@ -153,7 +153,7 @@ class Merchant : public PowerBadge
 {
 
 public:
-	//Merchant();
+	Merchant();
 
 	void applySpecialPower();
 };
@@ -164,7 +164,7 @@ class Mounted : public PowerBadge
 {
 
 public:
-	//Mounted();
+	Mounted();
 
 	void applySpecialPower();
 };
@@ -175,7 +175,7 @@ class Pillaging : public PowerBadge
 {
 
 public:
-	//Pillaging();
+	Pillaging();
 
 	void applySpecialPower();
 };
@@ -186,7 +186,7 @@ class Seafaring : public PowerBadge
 {
 
 public:
-	//Seafaring();
+	Seafaring();
 
 	void applySpecialPower();
 };
@@ -197,7 +197,7 @@ class Spirit : public PowerBadge
 {
 
 public:
-	//Spirit();
+	Spirit();
 
 	void applySpecialPower();
 };
@@ -208,7 +208,7 @@ class Stout : public PowerBadge
 {
 
 public:
-	//Stout();
+	Stout();
 
 	void applySpecialPower();
 };
@@ -219,7 +219,7 @@ class Swamp : public PowerBadge
 {
 
 public:
-	//Swamp();
+	Swamp();
 
 	void applySpecialPower();
 };
@@ -230,7 +230,7 @@ class Underworld : public PowerBadge
 {
 
 public:
-	//Underworld();
+	Underworld();
 
 	void applySpecialPower();
 };
@@ -241,7 +241,15 @@ class Wealthy : public PowerBadge
 {
 
 public:
-	//Wealthy();
+	Wealthy();
+
+	void applySpecialPower();
+};
+class SpecialBlank : public PowerBadge
+{
+
+public:
+	SpecialBlank();
 
 	void applySpecialPower();
 };
