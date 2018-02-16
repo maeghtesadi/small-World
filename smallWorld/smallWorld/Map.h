@@ -21,4 +21,12 @@ public:
 
 	void printMapGraph();
 
+	//test if graph is connected
+
+	void BFS(Region* r, vector<bool>& visited);
+
+	//Map getTranspose();
+
+	bool isConnected();
+
 };
