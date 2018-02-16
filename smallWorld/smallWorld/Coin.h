@@ -4,7 +4,7 @@
 using namespace std;
 
 class Coin {
-private:
+protected:
 
 	int value;
 
@@ -20,7 +20,7 @@ class OneCoin : public Coin
 {
 
 public:
-	//OneCoin();
+	OneCoin();
 
 };
 
@@ -28,7 +28,7 @@ class ThreeCoin : public Coin
 {
  
 public:
-	//ThreeCoin();
+	ThreeCoin();
 
 };
 
@@ -36,7 +36,7 @@ class FiveCoin : public Coin
 {
 
 public:
-	//FiveCoin();
+	FiveCoin();
 
 };
 
@@ -44,7 +44,7 @@ class TenCoin : public Coin
 {
 
 public:
-	//TenCoin();
+	TenCoin();
 
 };
 

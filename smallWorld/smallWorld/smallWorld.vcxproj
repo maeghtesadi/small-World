@@ -160,10 +160,12 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="coin.cpp" />
     <ClCompile Include="DiceRollingFacility.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapLoader.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="powerBadge.cpp" />
     <ClCompile Include="region.cpp" />
     <ClCompile Include="smallWorld.cpp" />
     <ClCompile Include="race.cpp" />
