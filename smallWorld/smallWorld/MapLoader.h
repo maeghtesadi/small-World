@@ -35,4 +35,6 @@ public:
 
 	vector<vector<int>> getEdges();
 
+	~MapLoader();
+
 };

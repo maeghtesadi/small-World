@@ -79,7 +79,8 @@ vector<Region*> Region::getNeigborRegions()
 	return neigborRegions;
 }
 
-void Region::printNeigbors() {
+void Region::printNeigbors() 
+{
 	std::cout << "my region id is " << this->id << " and my neigbor's ids are: " << endl;
 	for (int i = 0; i < neigborRegions.size(); i++)
 	{

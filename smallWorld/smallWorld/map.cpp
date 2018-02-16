@@ -90,3 +90,11 @@ bool Map::isConnected() {
 	return true;
 
 }
+
+//Map::~Map()
+//{
+//	for (int i = 0; i < regions.size(); i++)
+//	{
+//		delete &regions[i];
+//	}
+//}

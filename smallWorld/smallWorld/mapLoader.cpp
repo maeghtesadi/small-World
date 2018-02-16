@@ -105,6 +105,7 @@ void MapLoader::setMap(string file)
 			}
 			edges.push_back(neighbors);
 			
+			delete loadedRegion;
 		}
 
 	}
@@ -167,4 +168,9 @@ string MapLoader::getPictureLocation()
 vector<vector<int>> MapLoader::getEdges()
 {
 	return edges;
+}
+
+MapLoader::~MapLoader()
+{
+	delete this->map;
 }
