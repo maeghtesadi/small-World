@@ -4,6 +4,7 @@
 Player::Player()
 {
 	die = new DiceRollingFacility();
+	coins = new vector<Coin*>();
 }
 
 void Player::picks_race(Race* race)

@@ -29,5 +29,13 @@ public:
 
 	vector<Race*>* getSixRandomRaces();
 
+	OneCoin* getOneCoin();
+
+	ThreeCoin* getThreeCoin();
+
+	FiveCoin* getFiveCoin();
+
+	TenCoin* getTenCoin();
+
 	~GameDeck();
 };

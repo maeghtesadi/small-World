@@ -135,6 +135,29 @@ vector<Race*>* GameDeck::getSixRandomRaces()
 
 }
 
+OneCoin* GameDeck::getOneCoin()
+{
+	oneCoins.pop_back();
+	return oneCoins.at(0);
+}
+
+ThreeCoin* GameDeck::getThreeCoin()
+{
+	threeCoins.pop_back();
+	return threeCoins.at(0);
+}
+
+FiveCoin* GameDeck::getFiveCoin()
+{
+	fiveCoin.pop_back();
+	return fiveCoin.at(0);
+}
+
+TenCoin* GameDeck::getTenCoin()
+{
+	tenCoin.pop_back();
+	return tenCoin.at(0);
+}
 
 
 GameDeck::~GameDeck()

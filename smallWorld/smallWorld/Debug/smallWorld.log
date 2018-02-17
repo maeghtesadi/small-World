@@ -1,10 +1,5 @@
-﻿  gameDeck.cpp
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(7): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(143): warning C4018: '<': signed/unsigned mismatch
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(148): warning C4018: '<': signed/unsigned mismatch
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(153): warning C4018: '<': signed/unsigned mismatch
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(158): warning C4018: '<': signed/unsigned mismatch
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(163): warning C4018: '<': signed/unsigned mismatch
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(168): warning C4018: '<': signed/unsigned mismatch
-c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(173): warning C4018: '<': signed/unsigned mismatch
+﻿  player.cpp
+c:\school projects\comp 345\small-world\smallworld\smallworld\player.cpp(23): warning C4018: '<': signed/unsigned mismatch
+c:\school projects\comp 345\small-world\smallworld\smallworld\player.cpp(38): warning C4018: '<': signed/unsigned mismatch
+c:\school projects\comp 345\small-world\smallworld\smallworld\player.cpp(59): warning C4018: '<': signed/unsigned mismatch
   smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\Debug\smallWorld.exe
