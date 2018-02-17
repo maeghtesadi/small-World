@@ -21,7 +21,7 @@ int Player::scores()
 	int score = 0;
 	for (int i = 0; i < coins->size(); i++)
 	{
-		score =+ coins->at(i)->getValue()
+		score = +coins->at(i)->getValue();
 	}
 	return score;
 }

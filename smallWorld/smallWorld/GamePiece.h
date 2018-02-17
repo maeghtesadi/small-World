@@ -18,7 +18,7 @@ public:
 
 	string getName();
 
-	virtual void applySpecialPower() = 0;
+	//virtual void applySpecialPower() = 0;
 };
 
 

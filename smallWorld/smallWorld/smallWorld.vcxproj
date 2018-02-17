@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="Coin.h" />
     <ClInclude Include="DiceRollingFacility.h" />
+    <ClInclude Include="GameDeck.h" />
     <ClInclude Include="GamePiece.h" />
     <ClInclude Include="PowerBadge.h" />
     <ClInclude Include="MapLoader.h" />
@@ -162,6 +163,7 @@
   <ItemGroup>
     <ClCompile Include="coin.cpp" />
     <ClCompile Include="DiceRollingFacility.cpp" />
+    <ClCompile Include="gameDeck.cpp" />
     <ClCompile Include="GamePiece.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapLoader.cpp" />
