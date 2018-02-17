@@ -53,7 +53,7 @@ public:
 
 	PowerBadge* getPowerBadge();
 
-	void setPowerBadge();
+	void setPowerBadge(PowerBadge* PB);
 
 	//virtual void applySpecialPower() = 0;
 

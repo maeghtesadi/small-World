@@ -24,8 +24,17 @@ int Race::getOwner_id() {
 int Race::getValue() {
 	return this->value;
 }
+
 string Race::getName() {
 	return this->name;
+}
+
+PowerBadge* Race::getPowerBadge() {
+	return this->powerbadge;
+}
+
+void Race::setPowerBadge(PowerBadge* PB) {
+	this->powerbadge = PB;
 }
 
 

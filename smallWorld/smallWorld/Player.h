@@ -2,6 +2,7 @@
 #include "Coin.h"
 #include "Region.h"
 #include "DiceRollingFacility.h"
+#include "Race.h"
 #include <vector>
 #include <string>
 
@@ -20,7 +21,7 @@ private:
 
 	string summarySheet;
 
-	//game tokens
+	vector<Race*>* races;
 
 	DiceRollingFacility* die;
 
@@ -28,11 +29,11 @@ public:
 
 	Player();
 
-	void picks_race();
+	void picks_race(Race* race);
 
 	void conquers();
 
-	void scores();
+	int scores();
 
 	void addRegions(Region* region);
 
@@ -44,11 +45,19 @@ public:
 
 	void removeCoin(Coin* coin, int value_of_coin);
 
-	vector<Region*>* getCoins();
+	vector<Coin*>* getCoins();
 
 	string getSummarySheet();
 
 	void setSummarySheet(string summary);
 
 	void appendSummarySheet(string summary);
+
+	void addRaces(Race* region);
+
+	void removeRaces(Race* region);
+
+	vector<Race*>* getRaces();
+
+	~Player();
 };

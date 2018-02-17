@@ -6,9 +6,9 @@ Player::Player()
 	die = new DiceRollingFacility();
 }
 
-void Player::picks_race()
+void Player::picks_race(Race* race)
 {
-	//todo
+	addRaces(race);
 }
 
 void Player::conquers()
@@ -16,9 +16,14 @@ void Player::conquers()
 	//todo
 }
 
-void Player::scores()
+int Player::scores()
 {
-	//todo
+	int score = 0;
+	for (int i = 0; i < coins->size(); i++)
+	{
+		score =+ coins->at(i)->getValue()
+	}
+	return score;
 }
 
 void Player::addRegions(Region* region)
@@ -43,3 +48,64 @@ vector<Region*>* Player::getRegions()
 	return this->regions;
 }
 
+void Player::addCoin(Coin* coin)
+{
+	coins->push_back(coin);
+}
+
+void Player::removeCoin(Coin* coin, int value_of_coin)
+{
+	for (int i = 0; i < coins->size(); i++)
+	{
+		if (coins->at(i)->getValue() == value_of_coin)
+		{
+			coins->erase(coins->begin() + i);
+		}
+	}
+}
+
+vector<Coin*>* Player::getCoins()
+{
+	return this->coins;
+}
+
+string Player::getSummarySheet()
+{
+	return summarySheet;
+}
+
+void Player::setSummarySheet(string summary)
+{
+	this->summarySheet;
+}
+
+void Player::appendSummarySheet(string summary)
+{
+	this->summarySheet + "\n " + summary;
+}
+
+void Player::addRaces(Race* race)
+{
+	races->push_back(race);
+}
+
+//void Player::removeRaces(Race* region)
+//{
+//	for (int i = 0; i < coins->size(); i++)
+//	{
+//		if (coins->at(i)->getValue() == value_of_coin)
+//		{
+//			coins->erase(coins->begin() + i);
+//		}
+//	}
+//}
+
+vector<Race*>* Player::getRaces()
+{
+	return this->races;
+}
+
+Player::~Player()
+{
+	delete die;
+}

@@ -4,18 +4,17 @@
 using namespace std;
 
 class GamePiece {
-private:
+protected:
 	string name;
 
 	//the player who controls this region
 	int owner_id;
 
-
 public:
 
 	int getOwner_id();
 
-	void setOwnerId();
+	void setOwner_Id(int id);
 
 	string getName();
 

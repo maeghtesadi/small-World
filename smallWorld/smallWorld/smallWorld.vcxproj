@@ -162,6 +162,7 @@
   <ItemGroup>
     <ClCompile Include="coin.cpp" />
     <ClCompile Include="DiceRollingFacility.cpp" />
+    <ClCompile Include="GamePiece.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapLoader.cpp" />
     <ClCompile Include="player.cpp" />
