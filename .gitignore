@@ -2,6 +2,6 @@
 # Files to ignore
 
 .vs/
-smallWorld/.vs/smallWorld/v15/*
+smallWorld/.vs/
 smallWorld/Debug/*
 smallWorld/smallWorld/Debug/*
