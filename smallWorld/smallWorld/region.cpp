@@ -6,6 +6,14 @@
 Region::Region()
 {
 	this->gamePieces = vector<GamePiece*>();
+	this->gamePieces.push_back(new TrollLair());
+	this->gamePieces.push_back(new Fortress());
+	this->gamePieces.push_back(new Mountain());
+	this->gamePieces.push_back(new Encampment());
+	this->gamePieces.push_back(new Hole_in_the_Ground());
+	this->gamePieces.push_back(new Hero());
+	this->gamePieces.push_back(new Dragon());
+
 	this->neigborRegions = vector<Region*>();
 }
 
