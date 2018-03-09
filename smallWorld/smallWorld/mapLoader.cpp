@@ -88,9 +88,13 @@ void MapLoader::setMap(string file)
 			int y_pos;
 			ss2 >> y_pos;
 
+			// On the stack
 			Point point = Point::Point(x_pos, y_pos);
 
-			//make regions with the values obtained from the file
+			/*
+			  Make regions with the values obtained from the file.
+			  Point is passed by value here, which is intentional.
+			*/
 			Region* loadedRegion = new Region(id, 5, point);
 
 			loadedMap.push_back(*loadedRegion);
