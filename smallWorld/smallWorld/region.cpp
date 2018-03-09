@@ -5,31 +5,26 @@
 
 Region::Region()
 {
+	this->gamePieces = vector<GamePiece*>();
+	this->gamePieces.push_back(new TrollLair());
+	this->gamePieces.push_back(new Fortress());
+	this->gamePieces.push_back(new Mountain());
+	this->gamePieces.push_back(new Encampment());
+	this->gamePieces.push_back(new Hole_in_the_Ground());
+	this->gamePieces.push_back(new Hero());
+	this->gamePieces.push_back(new Dragon());
 
+	this->neigborRegions = vector<Region*>();
 }
 
-Region::Region(int id, int token, vector<Region*> neigborRegions)
-{
+Region::Region(int id, int token) : Region() {
 	this->id = id;
-	this->token = token;
-	//this->neigborRegions = neigborRegions;
-}
-
-Region::Region(int id, int x_pos, int y_pos, int token)
-{
-	this->id = id;
-	this->x_pos = x_pos;
-	this->y_pos = y_pos;
 	this->token = token;
 }
 
-Region::Region(int id, int x_pos, int y_pos, int token, vector<Region*> neigborRegions)
+Region::Region(int id, int token, Point point) : Region(id, token)
 {
-	this->id = id;
-	this->x_pos = x_pos;
-	this->y_pos = y_pos;
-	this->token = token;
-	//this->neigborRegions = neigborRegions;
+	this->point = point;
 }
 
 void Region::setId(int token)
