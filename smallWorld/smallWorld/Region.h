@@ -1,6 +1,8 @@
 #pragma once
 
 #include <vector>
+#include "Point.h"
+#include "GamePiece.h"
 
 using namespace std;
 
@@ -16,22 +18,26 @@ private:
 
 	//the player who controls this region
 	int owner_id;
+	
+	/// <summary>
+	/// The game pieces
+	/// </summary>
+	vector<GamePiece*> gamePieces;
 
 	// neigboring regions
 	vector<Region*> neigborRegions; //veken said store pointers //claudia says all object instance variables should be pointers
+									
+	/// <summary>
+	/// The x, y pixel coordinates on the picture
+	/// </summary>
+	Point point;
 
-	//pixel values on the picture
-	int x_pos;
-	int y_pos;
+	Region(int id, int token);
 
 public:
 	Region();
 
-	Region(int id, int token, vector<Region*> neigborRegions);
-
-	Region(int id, int x_pos, int y_pos, int token);
-
-	Region(int id, int x_pos, int y_pos, int token, vector<Region*> neigborRegions);
+	Region(int id, int token, Point point);
 
 	void setId(int token);
 
@@ -50,5 +56,4 @@ public:
 	vector<Region*> getNeigborRegions();
 
 	void printNeigbors();
-
 };
