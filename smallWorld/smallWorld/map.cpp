@@ -54,7 +54,7 @@ void Map::printMapGraph() {
 void Map::BFS(Region* r, vector<bool>& visited) {
 	
 	list<Region*> tempRegions;
-	vector<Region*>::iterator i;
+	//vector<Region*>::iterator i;
 	//visited[r->getId()-1] = true; //because region id starts from 1 not 0
 	visited[r->getId() - 1] = true;
 	tempRegions.push_back(r);

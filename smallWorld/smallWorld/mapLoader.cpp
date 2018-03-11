@@ -180,7 +180,8 @@ void MapLoader::setMapGraph() {
 		for (int j = 0; j < edges[i].size(); j++)
 		{
 			int temp2 = edges[i][j] - 1;
-			Region* tempRegion = &map->getRegions().at(temp2); // &map->getRegions().at(temp2) putting a '&' at the begining turns everything into a pointer
+			//Region* tempRegion = &map->getRegions().at(temp2); // &map->getRegions().at(temp2) putting a '&' at the begining turns everything into a pointer
+			Region* tempRegion = &map->getRegionsPtr()->at(temp2);
 			temp.push_back(tempRegion); //a neighbor region   // [edges[i][j] - 1] index of the neigbor region in map.getRegions()		
 		}
 		map->getRegionsPtr()->at(i).setNeigborRegions(temp);
