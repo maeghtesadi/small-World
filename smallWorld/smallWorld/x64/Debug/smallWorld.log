@@ -1,2 +1,7 @@
 ﻿  smallWorld.cpp
+<<<<<<< Updated upstream
   smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\x64\Debug\smallWorld.exe
+=======
+c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\smallworld.cpp(266): error C2039: 'rollDice': is not a member of 'Player'
+  c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\player.h(12): note: see declaration of 'Player'
+>>>>>>> Stashed changes
