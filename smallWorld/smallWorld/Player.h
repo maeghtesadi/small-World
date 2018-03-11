@@ -43,7 +43,7 @@ public:
 
 	void addCoin(Coin* coin);
 
-	void removeCoin(Coin* coin, int value_of_coin);
+	void removeCoin(int value_of_coin);
 
 	vector<Coin*>* getCoins();
 

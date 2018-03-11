@@ -53,9 +53,25 @@ public:
 
 	int getId();
 
+	void setOwner_id(int owner_id);
+
+	int getOwner_id();
+
 	void setToken(int token);
 
 	int getToken();
+
+	void setType(string type);
+
+	string getType();
+
+	void setSymbol(string symbol);
+
+	string getSymbol();
+
+	void setBorderRegion(bool borderRegion);
+
+	bool getBorderRegion();
 
 	void setNeigborRegions(vector<Region*> neigborRegions);
 
@@ -64,6 +80,14 @@ public:
 	void removeNeigborRegions(Region* region);
 
 	vector<Region*> getNeigborRegions();
+
+	void setGamePiece(vector<GamePiece*> neigborRegions);
+
+	void addGamePiece(GamePiece* region);
+
+	void removeGamePiece(GamePiece* region);
+
+	vector<GamePiece*> getGamePieces();
 
 	void printNeigbors();
 };

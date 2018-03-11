@@ -39,6 +39,46 @@ int Region::getId()
 	return this->id;
 }
 
+void Region::setOwner_id(int owner_id)
+{
+	this->owner_id = owner_id;
+}
+
+int Region::getOwner_id()
+{
+	return this->owner_id;
+}
+
+void Region::setType(string type)
+{
+	this->type = type;
+}
+
+string Region::getType()
+{
+	return this->type;
+}
+
+void Region::setSymbol(string symbol)
+{
+	this->symbol = symbol;
+}
+
+string Region::getSymbol()
+{
+	return this->symbol;
+}
+
+void Region::setBorderRegion(bool borderRegion)
+{
+	this->borderRegion = borderRegion;
+}
+
+bool Region::getBorderRegion()
+{
+	return this->borderRegion;
+}
+
 void Region::setToken(int token)
 {
 	this->token = token;
@@ -71,18 +111,54 @@ void Region::removeNeigborRegions(Region* region)
 	}
 }
 
+vector<GamePiece*> Region::getGamePieces()
+{
+	return gamePieces;
+}
+
+void Region::setGamePiece(vector<GamePiece*> gamePieces)
+{
+	this->gamePieces = gamePieces;
+}
+
+void Region::addGamePiece(GamePiece* gamePiece)
+{
+	//pushing the address to the address container
+	gamePieces.push_back(gamePiece);
+}
+
+void Region::removeGamePiece(GamePiece* gamePiece)
+{
+	for (int i = 0; i < gamePieces.size(); i++)
+	{
+		if (gamePieces[i]->getName() == gamePiece->getName())
+		{
+			gamePieces.erase(gamePieces.begin() + i);
+		}
+	}
+}
+
 vector<Region*> Region::getNeigborRegions()
 {
 	return neigborRegions;
 }
 
+
 void Region::printNeigbors() 
 {
-	std::cout << "my region id is " << this->id << " and my neigbor's ids are: " << endl;
+	std::cout << "--------------------------------------" << endl;
+	std::cout << "My region id is " << this->id << endl; 
+	std::cout << "border status " << this->borderRegion << endl;
+	std::cout << "My symbole is " << this->symbol << endl;
+	std::cout << "My land type is " << this->type << endl;
+	std::cout << "My owner is " << this->owner_id << endl;
+	cout << "My neigbor's ids are: " << endl;
 	for (int i = 0; i < neigborRegions.size(); i++)
 	{
-		std::cout << neigborRegions[i]->getId() << endl;
+		std::cout << neigborRegions[i]->getId() << ",";
 	}
+	std::cout << endl;
+	std::cout << "--------------------------------------" << endl;
 }
 
 

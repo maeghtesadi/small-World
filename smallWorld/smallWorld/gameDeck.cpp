@@ -159,6 +159,17 @@ TenCoin* GameDeck::getTenCoin()
 	return tenCoin.at(0);
 }
 
+GamePiece* GameDeck::getGamePiece(string type)
+{
+	for (int i = 0; i < gamePiece.size(); i++)
+	{
+		if (gamePiece[i]->getName().compare(type) == 0) 
+		{
+			gamePiece.erase(gamePiece.begin() + i);
+			return gamePiece.at(i);
+		}
+	}
+}
 
 GameDeck::~GameDeck()
 {
