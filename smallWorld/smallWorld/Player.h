@@ -47,6 +47,8 @@ public:
 
 	vector<Coin*>* getCoins();
 
+	int rollDice();
+
 	string getSummarySheet();
 
 	void setSummarySheet(string summary);

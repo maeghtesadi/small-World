@@ -72,6 +72,10 @@ vector<Coin*>* Player::getCoins()
 	return this->coins;
 }
 
+int Player::rollDice() {
+	return die->rollDice();
+}
+
 string Player::getSummarySheet()
 {
 	return summarySheet;
