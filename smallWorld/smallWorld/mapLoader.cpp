@@ -109,10 +109,13 @@ void MapLoader::setMap(string file)
 			// Region type and Lost Trible
 			string type;
 			int ownerID;
+			int token = 0;
 			if (array[3].find("LT") != std::string::npos) //has lost tribes
 			{
 				type = array[3].substr(0, array[3].size()-2);
 				ownerID = -2;
+				token = 1;
+
 			}
 			else //doesn't have lost tribes
 			{

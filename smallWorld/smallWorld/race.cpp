@@ -4,6 +4,7 @@
 void Race::setIsActive(bool active) {
 	this->isActive = active;
 }
+
 bool Race::getIsActive() {
 	return this->isActive;
 }
@@ -11,14 +12,33 @@ bool Race::getIsActive() {
 void Race::setIsDecline(bool decline) {
 	this->isDecline = decline;
 }
+
 bool Race::getIsDecline(){
 	return this->isDecline;
 }
+
 void Race::setOwnerId(int id ) {
 	this->owner_id= id;
 }
+
 int Race::getOwner_id() {
 	return this->owner_id;
+}
+
+void Race::setNum_tokens(int num_tokens) {
+	this->num_tokens = num_tokens;
+}
+
+int Race::getNum_tokens() {
+	return this->num_tokens;
+}
+
+void Race::setMax_num_tokens(int max_num_tokens) {
+	this->max_num_tokens = max_num_tokens;
+}
+
+int Race::getMax_num_tokens() {
+	return this->max_num_tokens;
 }
 
 int Race::getValue() {
