@@ -19,6 +19,12 @@ private:
 	//the player who controls this region
 	int owner_id;
 	
+	string type;
+
+	string symbol;
+
+	bool borderRegion;
+
 	/// <summary>
 	/// The game pieces
 	/// </summary>
@@ -32,12 +38,16 @@ private:
 	/// </summary>
 	Point point;
 
-	Region(int id, int token);
+	
 
 public:
 	Region();
 
+	Region(int id, int token);
+
 	Region(int id, int token, Point point);
+	
+	Region(int id, int token, string type, int owner_id, string symbol, bool borderRegion, Point point);
 
 	void setId(int token);
 

@@ -33,6 +33,8 @@ void MapLoader::setMap(string file)
 	bool picturePart;
 	bool mapPart;
 
+	bool line2;
+
 	//for making the map
 	vector<Region> loadedMap;
 
@@ -46,6 +48,8 @@ void MapLoader::setMap(string file)
 			//we found the picture file
 			picturePart = true;
 			mapPart = false;
+
+			line2 = false;
 			//go to the next loop iteration
 			continue;
 		}
@@ -62,7 +66,18 @@ void MapLoader::setMap(string file)
 
 		if (picturePart)
 		{
-			this->pictureLocation = line;
+			if (line2 == false)
+			{
+				this->pictureLocation = line;
+				line2 = true;
+			}
+			else
+			{
+				stringstream ss(line);
+				int turns;
+				ss >> turns;
+				map->setNb_of_turns(turns);
+			}
 		}
 		else if (mapPart)
 		{
@@ -84,24 +99,55 @@ void MapLoader::setMap(string file)
 			int x_pos;
 			ss1 >> x_pos;
 
-			stringstream ss2(array[1]);
+			stringstream ss2(array[2]);
 			int y_pos;
 			ss2 >> y_pos;
 
 			// On the stack
 			Point point = Point::Point(x_pos, y_pos);
 
+			// Region type and Lost Trible
+			string type;
+			int ownerID;
+			if (array[3].find("LT") != std::string::npos) //has lost tribes
+			{
+				type = array[3].substr(0, array[3].size()-2);
+				ownerID = -2;
+			}
+			else //doesn't have lost tribes
+			{
+				type = array[3];
+				ownerID = -1;
+			}
+
+			// Region symbol and Lost Trible
+			string symbol = array[4];
+			
+			// border Region?
+			bool border;
+			
+			if (array[5].find("Yes") != std::string::npos) //border Region
+			{
+				border = true;
+			}
+			else //Not border Region
+			{
+				border = false;
+			}
+			
+			
+			
 			/*
 			  Make regions with the values obtained from the file.
 			  Point is passed by value here, which is intentional.
 			*/
-			Region* loadedRegion = new Region(id, 5, point);
+			Region* loadedRegion = new Region(id, 5, type, ownerID, symbol, border, point);
 
 			loadedMap.push_back(*loadedRegion);
 
 			int count = 0;
 			vector<int> neighbors;
-			for (int i = 3; i < array.size(); i++)
+			for (int i = 6; i < array.size(); i++)
 			{
 				stringstream ss3(array[i]);
 				int value;
@@ -112,6 +158,7 @@ void MapLoader::setMap(string file)
 			edges.push_back(neighbors);
 			
 			delete loadedRegion;
+			loadedRegion = NULL;
 		}
 
 	}

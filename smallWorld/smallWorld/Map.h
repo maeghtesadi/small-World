@@ -7,6 +7,8 @@ class Map {
 private:
 
 	vector<Region> regions;
+	
+	int nb_of_turns;
 
 public:
 	Map();
@@ -20,6 +22,10 @@ public:
 	vector<Region>* getRegionsPtr();
 
 	void printMapGraph();
+
+	void setNb_of_turns(int turns);
+
+	int getNb_of_turns();
 
 	//test if graph is connected
 

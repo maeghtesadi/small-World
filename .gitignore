@@ -5,3 +5,7 @@
 smallWorld/.vs/
 smallWorld/Debug/*
 smallWorld/smallWorld/Debug/*
+
+smallWorld/smallWorld/x64/Debug/
+
+smallWorld/x64/Debug/

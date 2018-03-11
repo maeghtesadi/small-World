@@ -24,6 +24,16 @@ Region Map::find(Region region)
 	}
 }
 
+int Map::getNb_of_turns() {
+
+	return nb_of_turns;
+}
+
+void Map::setNb_of_turns(int turns) {
+
+	this->nb_of_turns = turns;
+}
+
 vector<Region> Map::getRegions() {
 
 	return regions;
