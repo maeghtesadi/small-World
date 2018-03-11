@@ -24,6 +24,16 @@ Region Map::find(Region region)
 	}
 }
 
+int Map::getNb_of_turns() {
+
+	return nb_of_turns;
+}
+
+void Map::setNb_of_turns(int turns) {
+
+	this->nb_of_turns = turns;
+}
+
 vector<Region> Map::getRegions() {
 
 	return regions;
@@ -44,7 +54,7 @@ void Map::printMapGraph() {
 void Map::BFS(Region* r, vector<bool>& visited) {
 	
 	list<Region*> tempRegions;
-	vector<Region*>::iterator i;
+	//vector<Region*>::iterator i;
 	//visited[r->getId()-1] = true; //because region id starts from 1 not 0
 	visited[r->getId() - 1] = true;
 	tempRegions.push_back(r);

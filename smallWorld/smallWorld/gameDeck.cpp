@@ -193,8 +193,8 @@ GameDeck::~GameDeck()
 		delete powers->at(i);
 	}
 
-	for (int i = 0; i < sixRaces->size(); i++)
-	{
-		delete sixRaces->at(i);
-	}
+	//for (int i = 0; i < sixRaces->size(); i++)
+	//{
+	//	delete sixRaces->at(i);
+	//}
 }
