@@ -1,21 +1,4 @@
-﻿  stdafx.cpp
-  DiceRollingFacility.cpp
-c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\dicerollingfacility.cpp(12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  GamePiece.cpp
-  Point.cpp
-  coin.cpp
-  gameDeck.cpp
-c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\gamedeck.cpp(7): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\gamedeck.cpp(117): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  map.cpp
-c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\map.cpp(92): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  mapLoader.cpp
-  player.cpp
-  powerBadge.cpp
-  race.cpp
-  region.cpp
+﻿  region.cpp
   smallWorld.cpp
   Generating Code...
-c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\map.cpp(25): warning C4715: 'Map::find': not all control paths return a value
-c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\gamedeck.cpp(173): warning C4715: 'GameDeck::getGamePiece': not all control paths return a value
   smallWorld.vcxproj -> C:\Users\The Refugee Centre\source\repos\small-World\smallWorld\x64\Debug\smallWorld.exe

@@ -50,5 +50,5 @@ bigMap.png
 46,456,890,HillLT,Magic,Yes,48,45,43,42,47
 47,456,890,SwampLT,Cavern,Yes,46,42,41
 48,456,890,Lake,None,Yes,45,46
-49,0,0,50,Swamp,None,No,2,3,5
-50,0,0,49,Mountain,Magic,No,12,1,2,3
+49,900,50,Swamp,None,No,2,3,5
+50,600,49,Mountain,Magic,No,12,1,2,3
