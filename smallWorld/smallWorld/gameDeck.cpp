@@ -125,8 +125,9 @@ vector<Race*>* GameDeck::getSixRandomRaces()
 
 		races->at(Random_race)->setPowerBadge(powers->at(Random_power));
 		sixRaces->push_back(races->at(Random_race));
-		races->erase(races->begin() + i);
-		powers->erase(powers->begin() + i);
+		
+		races->erase(races->begin() + Random_race);
+		powers->erase(powers->begin() + Random_power);
 	}
 
 	return sixRaces;

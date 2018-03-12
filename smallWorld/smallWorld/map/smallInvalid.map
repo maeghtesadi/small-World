@@ -1,7 +1,4 @@
 [Picture]
-smallMapPaint.png
-[Region,X,Y,Neibor Regions]
-[Picture]
 smallMap.png
 10
 [Region,X,Y,Type,Symbol,Border,Neibor Regions]
@@ -28,5 +25,5 @@ smallMap.png
 21,719,404,Swamp,None,Yes,15,16,20,22,23
 22,603,451,Mountain,None,Yes,16,17,21
 23,900,453,Lake,None,Yes,19,20,21
-24,100,200,25,Mountain,No,16,17,18
-25,200,100,24,Lake,Yes,17,18,19
+24,100,200,Mountain,None,No,16,17,18
+25,200,100,Lake,None,Yes,17,18,19
