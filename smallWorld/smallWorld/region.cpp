@@ -147,10 +147,10 @@ vector<Region*> Region::getNeigborRegions()
 void Region::printNeigbors() 
 {
 	std::cout << "--------------------------------------" << endl;
-	std::cout << "My region id is " << this->id << endl; 
-	std::cout << "border status " << this->borderRegion << endl;
-	std::cout << "My symbole is " << this->symbol << endl;
-	std::cout << "My land type is " << this->type << endl;
+	std::cout << "My region id is " << this->id << "\t"; 
+	std::cout << "border status " << this->borderRegion << "\t";
+	std::cout << "My symbole is " << this->symbol << "\t";
+	std::cout << "My land type is " << this->type << "      \t";
 	std::cout << "My owner is " << this->owner_id << endl;
 	cout << "My neigbor's ids are: " << endl;
 	for (int i = 0; i < neigborRegions.size(); i++)
