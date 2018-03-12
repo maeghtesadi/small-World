@@ -146,6 +146,7 @@ void MapLoader::setMap(string file)
 			*/
 			Region* loadedRegion = new Region(id, token, type, ownerID, symbol, border, point);
 
+			map->getRegionsPtr()->push_back(new Region(id, token, type, ownerID, symbol, border, point));
 			loadedMap.push_back(*loadedRegion);
 
 			int count = 0;
@@ -167,11 +168,11 @@ void MapLoader::setMap(string file)
 	}
 
 	//set our map member fuction with the values gotten from the file
-	for (int i = 0; i < loadedMap.size(); i++)
+	/*for (int i = 0; i < loadedMap.size(); i++)
 	{
 		Region temp = loadedMap[i];
-		map->getRegionsPtr()->push_back(temp);
-	}
+		map->getRegionsPtr()->push_back(&temp);
+	}*/
 }
 
 void MapLoader::setMapGraph() {
@@ -184,10 +185,10 @@ void MapLoader::setMapGraph() {
 		{
 			int temp2 = edges[i][j] - 1;
 			//Region* tempRegion = &map->getRegions().at(temp2); // &map->getRegions().at(temp2) putting a '&' at the begining turns everything into a pointer
-			Region* tempRegion = &map->getRegionsPtr()->at(temp2);
-			temp.push_back(tempRegion); //a neighbor region   // [edges[i][j] - 1] index of the neigbor region in map.getRegions()		
+			Region* tempRegion = map->getRegionsPtr()->at(temp2);
+			temp.push_back(map->getRegionsPtr()->at(temp2)); //a neighbor region   // [edges[i][j] - 1] index of the neigbor region in map.getRegions()		
 		}
-		map->getRegionsPtr()->at(i).setNeigborRegions(temp);
+		map->getRegionsPtr()->at(i)->setNeigborRegions(temp);
 		//map->getRegionsPtr()->at(i)->setNeigborRegions(&temp);
 		//*(map.getRegionsPtr() + i)  ;
 	}
