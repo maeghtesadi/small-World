@@ -1,4 +1,5 @@
-﻿  player.cpp
-  smallWorld.cpp
-  Generating Code...
-  smallWorld.vcxproj -> C:\Users\The Refugee Centre\source\repos\small-World\smallWorld\x64\Debug\smallWorld.exe
+﻿  gameDeck.cpp
+c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(7): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(117): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\school projects\comp 345\small-world\smallworld\smallworld\gamedeck.cpp(173): warning C4715: 'GameDeck::getGamePiece': not all control paths return a value
+  smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\x64\Debug\smallWorld.exe

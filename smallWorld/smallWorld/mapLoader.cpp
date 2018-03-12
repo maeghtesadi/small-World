@@ -144,7 +144,7 @@ void MapLoader::setMap(string file)
 			  Make regions with the values obtained from the file.
 			  Point is passed by value here, which is intentional.
 			*/
-			Region* loadedRegion = new Region(id, 5, type, ownerID, symbol, border, point);
+			Region* loadedRegion = new Region(id, token, type, ownerID, symbol, border, point);
 
 			loadedMap.push_back(*loadedRegion);
 
