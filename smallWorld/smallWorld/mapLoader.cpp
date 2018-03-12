@@ -26,7 +26,7 @@ void MapLoader::setMap(string file)
 	inputfile.open(file, ios::in);
 
 	//for reading the file
-	char characters[50];
+	char characters[55];
 	string line;
 
 	//to keep track of state
@@ -40,7 +40,7 @@ void MapLoader::setMap(string file)
 
 	while (!inputfile.eof())
 	{
-		inputfile.getline(characters, 50);
+		inputfile.getline(characters, 55);
 		line = characters;
 
 		if (line.find("Picture") != string::npos) 
