@@ -1,4 +1,5 @@
 #pragma once
+#include "GamePiece.h"
 #include "Coin.h"
 #include "Race.h"
 #include "PowerBadge.h"
@@ -20,6 +21,8 @@ private:
 	vector<FiveCoin*> fiveCoin;
 
 	vector<TenCoin*> tenCoin;
+
+	vector<GamePiece*> gamePiece;
 	
 	vector<Race*>* sixRaces;
 
@@ -36,6 +39,8 @@ public:
 	FiveCoin* getFiveCoin();
 
 	TenCoin* getTenCoin();
+
+	GamePiece* getGamePiece(string type);
 
 	~GameDeck();
 };

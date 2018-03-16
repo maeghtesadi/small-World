@@ -1,7 +1,11 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿
+# Files to ignore
 
-/smallWorld/.vs/smallWorld/v15/*
-/smallWorld/Debug/*
-/smallWorld/smallWorld/Debug/*
+.vs/
+smallWorld/.vs/
+smallWorld/Debug/*
+smallWorld/smallWorld/Debug/*
+
+smallWorld/smallWorld/x64/Debug/
+
+smallWorld/x64/Debug/

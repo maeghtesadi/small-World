@@ -125,8 +125,9 @@ vector<Race*>* GameDeck::getSixRandomRaces()
 
 		races->at(Random_race)->setPowerBadge(powers->at(Random_power));
 		sixRaces->push_back(races->at(Random_race));
-		races->erase(races->begin() + i);
-		powers->erase(powers->begin() + i);
+		
+		races->erase(races->begin() + Random_race);
+		powers->erase(powers->begin() + Random_power);
 	}
 
 	return sixRaces;
@@ -159,6 +160,17 @@ TenCoin* GameDeck::getTenCoin()
 	return tenCoin.at(0);
 }
 
+GamePiece* GameDeck::getGamePiece(string type)
+{
+	for (int i = 0; i < gamePiece.size(); i++)
+	{
+		if (gamePiece[i]->getName().compare(type) == 0) 
+		{
+			gamePiece.erase(gamePiece.begin() + i);
+			return gamePiece.at(i);
+		}
+	}
+}
 
 GameDeck::~GameDeck()
 {
@@ -193,8 +205,8 @@ GameDeck::~GameDeck()
 		delete powers->at(i);
 	}
 
-	for (int i = 0; i < sixRaces->size(); i++)
-	{
-		delete sixRaces->at(i);
-	}
+	//for (int i = 0; i < sixRaces->size(); i++)
+	//{
+	//	delete sixRaces->at(i);
+	//}
 }

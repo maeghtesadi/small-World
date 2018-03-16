@@ -151,6 +151,7 @@
     <ClInclude Include="DiceRollingFacility.h" />
     <ClInclude Include="GameDeck.h" />
     <ClInclude Include="GamePiece.h" />
+    <ClInclude Include="Point.h" />
     <ClInclude Include="PowerBadge.h" />
     <ClInclude Include="MapLoader.h" />
     <ClInclude Include="Map.h" />
@@ -168,6 +169,7 @@
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapLoader.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="Point.cpp" />
     <ClCompile Include="powerBadge.cpp" />
     <ClCompile Include="region.cpp" />
     <ClCompile Include="smallWorld.cpp" />

@@ -6,20 +6,26 @@ using namespace std;
 class Map {
 private:
 
-	vector<Region> regions;
+	vector<Region*> regions;
+	
+	int nb_of_turns;
 
 public:
 	Map();
 
-	Map(vector<Region> regions);
+	Map(vector<Region*> regions);
 
 	Region find(Region region);
 
-	vector<Region> getRegions();
+	vector<Region*> getRegions();
 
-	vector<Region>* getRegionsPtr();
+	vector<Region*>* getRegionsPtr();
 
 	void printMapGraph();
+
+	void setNb_of_turns(int turns);
+
+	int getNb_of_turns();
 
 	//test if graph is connected
 

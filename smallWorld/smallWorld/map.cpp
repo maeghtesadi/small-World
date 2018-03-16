@@ -8,7 +8,7 @@ Map::Map()
 
 }
 
-Map::Map(vector<Region> regions)
+Map::Map(vector<Region*> regions)
 {
 	this->regions = regions;
 }
@@ -17,19 +17,29 @@ Region Map::find(Region region)
 {
 	for (int i = 0; i < regions.size(); i++)
 	{
-		if (regions[i].getId() == region.getId())
+		if (regions.at(i)->getId() == region.getId())
 		{
-			return regions[i];
+			return *regions[i];
 		}
 	}
 }
 
-vector<Region> Map::getRegions() {
+int Map::getNb_of_turns() {
+
+	return nb_of_turns;
+}
+
+void Map::setNb_of_turns(int turns) {
+
+	this->nb_of_turns = turns;
+}
+
+vector<Region*> Map::getRegions() {
 
 	return regions;
 }
 
-vector<Region>* Map::getRegionsPtr() {
+vector<Region*>* Map::getRegionsPtr() {
 
 	return &regions;
 }
@@ -37,14 +47,14 @@ vector<Region>* Map::getRegionsPtr() {
 void Map::printMapGraph() {
 	for (int i = 0; i < regions.size(); i++)
 	{
-		regions[i].printNeigbors();
+		regions.at(i)->printNeigbors();
 	}
 }
 
 void Map::BFS(Region* r, vector<bool>& visited) {
 	
 	list<Region*> tempRegions;
-	vector<Region*>::iterator i;
+	//vector<Region*>::iterator i;
 	//visited[r->getId()-1] = true; //because region id starts from 1 not 0
 	visited[r->getId() - 1] = true;
 	tempRegions.push_back(r);
@@ -83,7 +93,7 @@ bool Map::isConnected() {
 	vector<bool> visited;
 	for (int i = 0; i < regions.size(); i++)
 		visited.push_back(false);
-	BFS(&regions[0], visited);
+	BFS(regions[0], visited);
 	for (int i = 0; i < regions.size(); i++)
 		if (visited[i] == false)
 			return false;

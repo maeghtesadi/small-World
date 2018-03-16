@@ -55,13 +55,14 @@ void Player::addCoin(Coin* coin)
 	coins->push_back(coin);
 }
 
-void Player::removeCoin(Coin* coin, int value_of_coin)
+void Player::removeCoin(int value_of_coin)
 {
 	for (int i = 0; i < coins->size(); i++)
 	{
 		if (coins->at(i)->getValue() == value_of_coin)
 		{
 			coins->erase(coins->begin() + i);
+			break;
 		}
 	}
 }
@@ -69,6 +70,10 @@ void Player::removeCoin(Coin* coin, int value_of_coin)
 vector<Coin*>* Player::getCoins()
 {
 	return this->coins;
+}
+
+int Player::rollDice() {
+	return die->rollDice();
 }
 
 string Player::getSummarySheet()

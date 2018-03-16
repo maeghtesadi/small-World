@@ -31,9 +31,9 @@ public:
 
 	int getValue();
 
-	//int getNum_tokens();
+	int getNum_tokens();
 
-	//void setNum_tokens();
+	void setNum_tokens(int Num_tokens);
 
 	bool getIsActive();
 	
@@ -47,7 +47,9 @@ public:
 
 	void setOwnerId(int id);
 	
-	//int getMax_num_tokens();
+	int getMax_num_tokens();
+
+	void setMax_num_tokens(int Max_num_tokens);
 
 	string getName();
 

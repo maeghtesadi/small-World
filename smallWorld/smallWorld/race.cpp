@@ -4,6 +4,7 @@
 void Race::setIsActive(bool active) {
 	this->isActive = active;
 }
+
 bool Race::getIsActive() {
 	return this->isActive;
 }
@@ -11,14 +12,33 @@ bool Race::getIsActive() {
 void Race::setIsDecline(bool decline) {
 	this->isDecline = decline;
 }
+
 bool Race::getIsDecline(){
 	return this->isDecline;
 }
+
 void Race::setOwnerId(int id ) {
 	this->owner_id= id;
 }
+
 int Race::getOwner_id() {
 	return this->owner_id;
+}
+
+void Race::setNum_tokens(int num_tokens) {
+	this->num_tokens = num_tokens;
+}
+
+int Race::getNum_tokens() {
+	return this->num_tokens;
+}
+
+void Race::setMax_num_tokens(int max_num_tokens) {
+	this->max_num_tokens = max_num_tokens;
+}
+
+int Race::getMax_num_tokens() {
+	return this->max_num_tokens;
 }
 
 int Race::getValue() {
@@ -47,6 +67,8 @@ Amazons::Amazons()
 	this->isDecline=false;
 	this->owner_id = -1;
 	this->value=6;
+	this->num_tokens = 0;
+	this->max_num_tokens = 15;
 
 }
 Dwarves::Dwarves()
@@ -56,7 +78,8 @@ Dwarves::Dwarves()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 3;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 8;
 }
 Elves::Elves()
 {
@@ -65,7 +88,8 @@ Elves::Elves()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 6;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 11;
 }
 Ghouls::Ghouls()
 {
@@ -74,7 +98,8 @@ Ghouls::Ghouls()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value =5 ;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 10;
 }
 Ratmen::Ratmen()
 {
@@ -83,7 +108,8 @@ Ratmen::Ratmen()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 8;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 13;
 }
 Skeletons::Skeletons()
 {
@@ -92,7 +118,8 @@ Skeletons::Skeletons()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 6;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 20;
 }
 Sorcerers::Sorcerers()
 {
@@ -101,7 +128,8 @@ Sorcerers::Sorcerers()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 5;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 18;
 }
 Tritons::Tritons()
 {
@@ -110,7 +138,8 @@ Tritons::Tritons()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 6;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 11;
 }
 Giants::Giants()
 {
@@ -119,7 +148,8 @@ Giants::Giants()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 6;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 11;
 }
 Halflings::Halflings()
 {
@@ -128,7 +158,8 @@ Halflings::Halflings()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 6;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 11;
 }
 Humans::Humans()
 {
@@ -137,6 +168,8 @@ Humans::Humans()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 5;
+	this->num_tokens = 0;
+	this->max_num_tokens = 10;
 
 }
 Orcs::Orcs()
@@ -146,7 +179,8 @@ Orcs::Orcs()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 5;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 10;
 }
 Trolls::Trolls()
 {
@@ -155,7 +189,8 @@ Trolls::Trolls()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 5;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 10;
 }
 Wizards::Wizards()
 {
@@ -164,7 +199,8 @@ Wizards::Wizards()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 5;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 10;
 }
 LostTribes::LostTribes()
 {
@@ -173,5 +209,6 @@ LostTribes::LostTribes()
 	this->isDecline = false;
 	this->owner_id = -1;
 	this->value = 0;
-
+	this->num_tokens = 0;
+	this->max_num_tokens = 18;
 }
