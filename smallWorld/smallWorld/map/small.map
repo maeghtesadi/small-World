@@ -9,9 +9,9 @@ smallMap.png
 5,372,173,HillLT,None,No,2,3,4,6,10,9
 6,185,275,FarmlandLT,None,Yes,3,5,10,11,12
 7,598,38,SwampLT,Cavern,Yes,4,8,14,13
-8,595,160,Mountain,No,4,7,14,15,16,9
-9,488,229,Lake,No,4,5,10,16,8
-10,392,315,ForestLT,No,5,6,9,11,17,16
+8,595,160,Mountain,None,No,4,7,14,15,16,9
+9,488,229,Lake,None,No,4,5,10,16,8
+10,392,315,ForestLT,None,No,5,6,9,11,17,16
 11,307,403,Hill,Cavern,Yes,6,10,17,12
 12,139,390,SwampLT,Magic,Yes,6,11
 13,841,48,Hill,None,Yes,7,14,18
