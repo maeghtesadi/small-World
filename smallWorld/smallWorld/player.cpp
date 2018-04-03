@@ -112,7 +112,19 @@ vector<Race*>* Player::getRaces()
 	return this->races;
 }
 
+void Player::setStrategy(Strategy *newStrategy) {
+	this->strategy = newStrategy;
+}
+
+int Player::executeStrategy(Map* gameBoard, int raceToken, int maxRaceToken, int playerId) {
+	return this->strategy->execute(gameBoard, raceToken, maxRaceToken, playerId);
+}
+
+
 Player::~Player()
 {
+	delete strategy;
+	strategy = NULL;
 	delete die;
+	die = NULL;
 }

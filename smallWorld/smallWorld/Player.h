@@ -5,7 +5,7 @@
 #include "Race.h"
 #include <vector>
 #include <string>
-
+#include "Strategy.h"
 
 using namespace std;
 
@@ -24,6 +24,8 @@ private:
 	vector<Race*>* races;
 
 	DiceRollingFacility* die;
+
+	Strategy *strategy;
 
 public:
 
@@ -61,5 +63,12 @@ public:
 
 	vector<Race*>* getRaces();
 
+	void setStrategy(Strategy *newStrategy);
+
+	int executeStrategy(Map* gameBoard, int raceToken, int maxRaceToken, int playerId);
+
+
 	~Player();
 };
+
+//implementing strategy pattern 
