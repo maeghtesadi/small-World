@@ -1,10 +1,14 @@
 #pragma once
 #include "Observer.h"
-
-template <class T>
-class Subject{
+#include <list>
+using namespace std;
+class Subject {
 public:
-	virtual void add(Observer<T> o) = 0;
-	virtual void remove(Observer<T> o) = 0;
-	virtual void notify(T update) = 0;
-}
+	virtual void Attach(Observer* o);
+	virtual void Detach(Observer* o);
+	virtual void Notify();
+	Subject();
+	~Subject();
+private:
+	list<Observer*> *_observers;
+};

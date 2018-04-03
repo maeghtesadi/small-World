@@ -1,9 +1,2 @@
-<<<<<<< HEAD
-﻿  mapLoader.cpp
-  smallWorld.cpp
-  Generating Code...
-  smallWorld.vcxproj -> C:\Users\The Refugee Centre\source\repos\small-World\smallWorld\x64\Debug\smallWorld.exe
-=======
-﻿  strategy.cpp
+﻿  gameView.cpp
   smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\x64\Debug\smallWorld.exe
->>>>>>> dev3

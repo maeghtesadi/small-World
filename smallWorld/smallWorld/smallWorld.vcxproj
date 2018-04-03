@@ -151,6 +151,8 @@
     <ClInclude Include="DiceRollingFacility.h" />
     <ClInclude Include="GameDeck.h" />
     <ClInclude Include="GamePiece.h" />
+    <ClInclude Include="GameView.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="PowerBadge.h" />
     <ClInclude Include="MapLoader.h" />
@@ -160,6 +162,7 @@
     <ClInclude Include="Region.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Strategy.h" />
+    <ClInclude Include="Subject.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +170,7 @@
     <ClCompile Include="DiceRollingFacility.cpp" />
     <ClCompile Include="gameDeck.cpp" />
     <ClCompile Include="GamePiece.cpp" />
+    <ClCompile Include="gameView.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="mapLoader.cpp" />
     <ClCompile Include="player.cpp" />
@@ -182,6 +186,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="strategy.cpp" />
+    <ClCompile Include="subject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

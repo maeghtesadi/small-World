@@ -6,10 +6,11 @@
 #include <vector>
 #include <string>
 #include "Strategy.h"
+#include "Subject.h"
 
 using namespace std;
 
-class Player {
+class Player: public Subject {
 
 private:
 	//a number to identify players

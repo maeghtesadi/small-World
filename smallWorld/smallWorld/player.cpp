@@ -15,7 +15,7 @@ void Player::picks_race(Race* race)
 
 void Player::conquers()
 {
-	//todo
+
 }
 
 int Player::scores()
@@ -83,7 +83,8 @@ string Player::getSummarySheet()
 
 void Player::setSummarySheet(string summary)
 {
-	this->summarySheet;
+	this->summarySheet = summary;
+	Notify();
 }
 
 void Player::appendSummarySheet(string summary)
