@@ -25,7 +25,11 @@ public:
 };
 
 //Display the cards owned by every player, update the view when
+<<<<<<< Updated upstream
 //any playerï¿½s hand is changing.
+=======
+//any player’s hand is changing.
+>>>>>>> Stashed changes
 class HandsObserverDecorator : public AddOnDecorator {
 public:
 	virtual string message() = 0;
