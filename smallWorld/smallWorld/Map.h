@@ -1,9 +1,11 @@
 #pragma once
 #include "Region.h"
+#include "Observer.h"
+#include "Subject.h"
 #include <vector>
 using namespace std;
 
-class Map {
+class Map : public Subject {
 private:
 
 	vector<Region*> regions;
@@ -19,6 +21,8 @@ public:
 
 	vector<Region*> getRegions();
 
+	void setRegions(vector<Region*> regions);
+
 	vector<Region*>* getRegionsPtr();
 
 	void printMapGraph();
@@ -26,6 +30,8 @@ public:
 	void setNb_of_turns(int turns);
 
 	int getNb_of_turns();
+
+	void changeRegionOwnerId(int regionId, int newOwnerId);
 
 	//test if graph is connected
 

@@ -6,7 +6,10 @@ Subject::Subject() {
 	_observers = new list<Observer*>;
 }
 Subject::~Subject() {
-	delete _observers;
+	if (_observers->size() != 0)
+	{
+		delete _observers;
+	}
 }
 void Subject::Attach(Observer* o) {
 	_observers->push_back(o);

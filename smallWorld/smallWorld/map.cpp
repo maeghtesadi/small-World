@@ -3,7 +3,7 @@
 #include "Map.h"
 #include <list>
 
-Map::Map() 
+Map::Map() :Subject()
 {
 
 }
@@ -39,6 +39,10 @@ vector<Region*> Map::getRegions() {
 	return regions;
 }
 
+void Map::setRegions(vector<Region*> regions) {
+	this->regions = regions;
+}
+
 vector<Region*>* Map::getRegionsPtr() {
 
 	return &regions;
@@ -49,6 +53,11 @@ void Map::printMapGraph() {
 	{
 		regions.at(i)->printNeigbors();
 	}
+}
+void Map::changeRegionOwnerId(int regionId, int newOwnerId ) {
+
+	regions.at(regionId)->setOwner_id(newOwnerId);
+	Notify();
 }
 
 void Map::BFS(Region* r, vector<bool>& visited) {

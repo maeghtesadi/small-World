@@ -1,0 +1,8 @@
+﻿  smallWorld.cpp
+smallWorld.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating code
+  36 of 1694 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    6 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\x64\Release\smallWorld.exe
