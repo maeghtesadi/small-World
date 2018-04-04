@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Coin.h" />
+    <ClInclude Include="deco.h" />
     <ClInclude Include="DiceRollingFacility.h" />
     <ClInclude Include="GameDeck.h" />
     <ClInclude Include="GamePiece.h" />
