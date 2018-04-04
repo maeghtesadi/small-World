@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿  GameStatistics.cpp
   gameView.cpp
   map.cpp
@@ -11,3 +12,6 @@ c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\small
   Generating Code...
 c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\map.cpp(25): warning C4715: 'Map::find': not all control paths return a value
   smallWorld.vcxproj -> C:\Users\The Refugee Centre\source\repos\small-World\smallWorld\x64\Debug\smallWorld.exe
+=======
+﻿  smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\x64\Debug\smallWorld.exe
+>>>>>>> Stashed changes
