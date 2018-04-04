@@ -1,2 +1,13 @@
+<<<<<<< Updated upstream
 ﻿  GameStatistics.cpp
   smallWorld.vcxproj -> C:\School projects\comp 345\small-World\smallWorld\x64\Debug\smallWorld.exe
+=======
+﻿  gameView.cpp
+  player.cpp
+  smallWorld.cpp
+c:\users\the refugee centre\source\repos\small-world\smallworld\smallworld\smallworld.cpp(26): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  strategy.cpp
+  subject.cpp
+  Generating Code...
+  smallWorld.vcxproj -> C:\Users\The Refugee Centre\source\repos\small-World\smallWorld\x64\Debug\smallWorld.exe
+>>>>>>> Stashed changes
